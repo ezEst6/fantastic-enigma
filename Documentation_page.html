@@ -4,7 +4,89 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Documentation</title>
 	</head>
-	<body></body>
+    <!-- User Story #8: I can see a nav element with a corresponding id="navbar" -->
+    <nav id="navbar">
+        <!-- User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation 
+        User Story #11: The header element in the navbar must come before any link (a) elements in the navbar -->
+        <header><h1>HTML Basic Documentation</h1></header>
+        <ul>
+            <!-- User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section 
+            User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section 
+            User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element -->
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href=""></a></li>
+            <li><a class="nav-link" href=""></a></li>
+            <li><a class="nav-link" href=""></a></li>
+            <li><a class="nav-link" href=""></a></li>
+        </ul>
+    </nav>
+	<body>
+        <!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation) -->
+		<main id="main-doc">
+            <!-- User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5 -->
+			<section class="main-section" id="Introduction">
+                <!-- User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section 
+                User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores -->
+				<header><h1>Introduccion</h1></header>
+				<br />
+				<p>
+					HTML is the standard markup language for creating Web pages.
+				</p>
+				<br />
+				<h3>What is HTML?</h3>
+				<ul>
+                    <!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each) -->
+					<li>HTML stands for Hyper Text Markup Language</li>
+					<li>
+						HTML is the standard markup language for creating Web
+						pages
+					</li>
+					<li>HTML describes the structure of a Web page</li>
+					<li>HTML consists of a series of elements</li>
+					<li>
+						HTML elements tell the browser how to display the
+						content
+					</li>
+					<li>
+						HTML elements label pieces of content such as "this is a
+						heading", "this is a paragraph", "this is a link", etc.
+					</li>
+				</ul>
+			</section>
+			<section class="main-section" id="Basic">
+                <header><h1>HTML Basic Examples</h1></header>
+                <br>
+                <!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each) -->
+                <p>In this chapter we will show some basic HTML examples.</p>
+                <p>Don't worry if we use tags you have not learned about yet.</p>
+                <br>
+                <h3>HTML Documents</h3>
+                <!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not each) -->
+                <p>All HTML documents must start with a document type declaration: <code><!DOCTYPE html></code>.</p>
+                <p>The HTML document itself begins with <code><html></code> and ends with <code></html></code>.</p>
+                <p>The visible part of the HTML document is between <code><body></code> and <code></body></code>.</p>
+                <br>
+                <h3>HTML Heading</h3>
+                <p>HTML headings are defined with the <code>h1</code> to <code>h6</code> tags.</p>
+                <p><code>h1</code> defines the most important heading. <code>h6</code> defines the least important heading.</p>
+                <br>
+                <h3>HTML Paragraphs</h3>
+                <p>HTML paragraphs are defined with the <code>p</code> tag.</p>
+                <br>
+                <h3>HTML Links</h3>
+                <p>HTML links are defined with the <code>a</code> tag.</p>
+                <p>The link's destination is specified in the <code>href</code> attribute. </p>
+                <p>Attributes are used to provide additional information about HTML elements.</p>
+                <br>
+                <h3>HTML Images</h3>
+                <p>HTML images are defined with the <code>img</code> tag.</p>
+                <p>The source file (<code>src</code>), alternative text (<code>alt</code>), <code>width</code>, and <code>height</code> are provided as attributes</p>
+            </section>
+			<section></section>
+			<section></section>
+			<section></section>
+		</main>
+	</body>
 </html>
