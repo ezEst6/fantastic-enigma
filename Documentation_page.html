@@ -16,8 +16,8 @@
             User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section 
             User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element -->
             <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href=""></a></li>
-            <li><a class="nav-link" href=""></a></li>
+            <li><a class="nav-link" href="#Basic">Basic</a></li>
+            <li><a class="nav-link" href="#Attributes">Attributes</a></li>
             <li><a class="nav-link" href=""></a></li>
             <li><a class="nav-link" href=""></a></li>
         </ul>
@@ -30,12 +30,10 @@
                 <!-- User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section 
                 User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores -->
 				<header><h1>Introduccion</h1></header>
-				<br />
 				<p>
 					HTML is the standard markup language for creating Web pages.
 				</p>
-				<br />
-				<h3>What is HTML?</h3>
+				<h4>What is HTML?</h4>
 				<ul>
                     <!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each) -->
 					<li>HTML stands for Hyper Text Markup Language</li>
@@ -57,54 +55,50 @@
 			</section>
 			<section class="main-section" id="Basic">
                 <header><h1>HTML Basic Examples</h1></header>
-                <br>
                 <!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each) -->
                 <p>In this chapter we will show some basic HTML examples.</p>
                 <p>Don't worry if we use tags you have not learned about yet.</p>
-                <br>
-                <h3>HTML Documents</h3>
+                <h4>HTML Documents</h4>
                 <!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not each) -->
                 <p>All HTML documents must start with a document type declaration: <code>!DOCTYPE html</code>.</p>
-                <p>The HTML document itself begins with <code><html></code> and ends with <code>/html</code>.</p>
+                <p>The HTML document itself begins with <code>html</code> and ends with <code>/html</code>.</p>
                 <p>The visible part of the HTML document is between <code><body></code> and <code>/body</code>.</p>
-                <br>
-                <h3>HTML Heading</h3>
+                <h4>HTML Heading</h4>
                 <p>HTML headings are defined with the <code>h1</code> to <code>h6</code> tags.</p>
                 <p><code>h1</code> defines the most important heading. <code>h6</code> defines the least important heading.</p>
-                <br>
-                <h3>HTML Paragraphs</h3>
+                <h4>HTML Paragraphs</h4>
                 <p>HTML paragraphs are defined with the <code>p</code> tag.</p>
-                <br>
-                <h3>HTML Links</h3>
+                <h4>HTML Links</h4>
                 <p>HTML links are defined with the <code>a</code> tag.</p>
                 <p>The link's destination is specified in the <code>href</code> attribute. </p>
                 <p>Attributes are used to provide additional information about HTML elements.</p>
-                <br>
-                <h3>HTML Images</h3>
+                <h4>HTML Images</h4>
                 <p>HTML images are defined with the <code>img</code> tag.</p>
                 <p>The source file (<code>src</code>), alternative text (<code>alt</code>), <code>width</code>, and <code>height</code> are provided as attributes</p>
             </section>
 			<section class="main-section" id="Atributes"></section>
                 <header><h1>HTML Atributes</h1></header>
                 <ul>
-                    <li>All HTML elements can have <blockquote>attributes</blockquote></li>
-                    <li>Attributes provide <blockquote>additional information</blockquote> about elements</li>
-                    <li>Attributes are always specified in <blockquote>te start tag</blockquote></li>
-                    <li>Attributes usually come in name/value pairs like: <blockquote>name="value"</blockquote></li>
+                    <li>All HTML elements can have <b>attributes</b></li>
+                    <li>Attributes provide <b>additional information</b> about elements</li>
+                    <li>Attributes are always specified in <b>te start tag</b></li>
+                    <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
                 </ul>
-                <br>
-                <h3>href</h3>
+                <h4>href</h4>
                 <p>the <code>a</code> tag defines a hyperlink. The <code>href</code> attribute specifies te URL of the page the link goes to.</p>
-                <br>
-                <h3>src</h3>
+                <h4>src</h4>
                 <p>The <code>img</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed.</p>
                 <p>There are two ways to specify the URL in the <code>src</code> attribute:</p>
                 <ol>
-                    <li><blockquote>Absolute URL</blockquote> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
-                    <p><blockquote>Notes:</blockquote> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
-                    <li><blockquote>Relative URL</blockquote> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li>
-                    <p><blockquote>Tip:</blockquote> It is almost always best to use relative URLs. They will not break if you change domain.</p>
+                    <li><b>Absolute URL</b> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
+                    <p><b>Notes:</b> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+                    <li><b>Relative URL</b> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li>
+                    <p><b>Tip:</b> It is almost always best to use relative URLs. They will not break if you change domain.</p>
                 </ol>
+                <h4>The width and height Attributes</h4>
+                <p>The <code>img</code> tag should also contain the <code>width</code> and <code>height</code> attributes, which specifies the width and height of the image (in pixels).</p>
+                <h4>The alt Attribute</h4>
+                <p>The required <code>alt</code> attribute for the <code>img</code> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the <code>src</code> attribute, or if the user uses a screen reader.</p>
 			<section></section>
 			<section></section>
 		</main>
