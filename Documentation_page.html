@@ -64,9 +64,9 @@
                 <br>
                 <h3>HTML Documents</h3>
                 <!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not each) -->
-                <p>All HTML documents must start with a document type declaration: <code><!DOCTYPE html></code>.</p>
-                <p>The HTML document itself begins with <code><html></code> and ends with <code></html></code>.</p>
-                <p>The visible part of the HTML document is between <code><body></code> and <code></body></code>.</p>
+                <p>All HTML documents must start with a document type declaration: <code>!DOCTYPE html</code>.</p>
+                <p>The HTML document itself begins with <code><html></code> and ends with <code>/html</code>.</p>
+                <p>The visible part of the HTML document is between <code><body></code> and <code>/body</code>.</p>
                 <br>
                 <h3>HTML Heading</h3>
                 <p>HTML headings are defined with the <code>h1</code> to <code>h6</code> tags.</p>
@@ -84,7 +84,27 @@
                 <p>HTML images are defined with the <code>img</code> tag.</p>
                 <p>The source file (<code>src</code>), alternative text (<code>alt</code>), <code>width</code>, and <code>height</code> are provided as attributes</p>
             </section>
-			<section></section>
+			<section class="main-section" id="Atributes"></section>
+                <header><h1>HTML Atributes</h1></header>
+                <ul>
+                    <li>All HTML elements can have <blockquote>attributes</blockquote></li>
+                    <li>Attributes provide <blockquote>additional information</blockquote> about elements</li>
+                    <li>Attributes are always specified in <blockquote>te start tag</blockquote></li>
+                    <li>Attributes usually come in name/value pairs like: <blockquote>name="value"</blockquote></li>
+                </ul>
+                <br>
+                <h3>href</h3>
+                <p>the <code>a</code> tag defines a hyperlink. The <code>href</code> attribute specifies te URL of the page the link goes to.</p>
+                <br>
+                <h3>src</h3>
+                <p>The <code>img</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed.</p>
+                <p>There are two ways to specify the URL in the <code>src</code> attribute:</p>
+                <ol>
+                    <li><blockquote>Absolute URL</blockquote> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
+                    <p><blockquote>Notes:</blockquote> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+                    <li><blockquote>Relative URL</blockquote> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li>
+                    <p><blockquote>Tip:</blockquote> It is almost always best to use relative URLs. They will not break if you change domain.</p>
+                </ol>
 			<section></section>
 			<section></section>
 		</main>
