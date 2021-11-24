@@ -6,206 +6,297 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Documentation</title>
 	</head>
-    <!-- User Story #8: I can see a nav element with a corresponding id="navbar" -->
-    <nav id="navbar">
-        <!-- User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation 
+	<!-- User Story #8: I can see a nav element with a corresponding id="navbar" -->
+	<nav id="navbar">
+		<!-- User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation 
         User Story #11: The header element in the navbar must come before any link (a) elements in the navbar -->
-        <header>HTML Basic Documentation</header>
-        <ul>
-            <!-- User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section 
+		<header><a href="https://www.freepnglogos.com/pics/html5-logo" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-icons-download-14.png" width="100" alt="html5 logo, html icons download" /></a></header>
+		<ul>
+			<!-- User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section 
             User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section 
             User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element -->
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#HTML_Basic_Examples">HTML Basic Examples</a></li>
-            <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
-            <li><a class="nav-link" href="#HTML_Text_Formatting">HTML Text Formatting</a></li>
-            <li><a class="nav-link" href="#HTML_Quotation_and_Citation_Elements">HTML Quotation and Citation Elements</a></li>
-        </ul>
-    </nav>
+			<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+			<li>
+				<a class="nav-link" href="#HTML_Basic_Examples">HTML Basic Examples</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#HTML_Text_Formatting">HTML Text Formatting</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#HTML_Quotation_and_Citation_Elements">HTML Quotation and Citation Elements</a>
+			</li>
+		</ul>
+	</nav>
 	<body>
-        <!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation) -->
+		<!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation) -->
 		<main id="main-doc">
-            <!-- User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5 -->
+            <header>HTML Documentation</header>
+			<!-- User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5 -->
 			<section class="main-section" id="Introduction">
-                <!-- User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section 
+				<!-- User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section 
                 User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores -->
 				<header>Introduction</header>
-				<p>
-					HTML is the standard markup language for creating Web pages.
-				</p>
+				<p>HTML is the standard markup language for creating Web pages.</p>
 				<h4>What is HTML?</h4>
 				<ul>
-                    <!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each) -->
+					<!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each) -->
 					<li>HTML stands for Hyper Text Markup Language</li>
-					<li>
-						HTML is the standard markup language for creating Web
-						pages
-					</li>
+					<li>HTML is the standard markup language for creating Web pages</li>
 					<li>HTML describes the structure of a Web page</li>
 					<li>HTML consists of a series of elements</li>
-					<li>
-						HTML elements tell the browser how to display the
-						content
-					</li>
-					<li>
-						HTML elements label pieces of content such as "this is a
-						heading", "this is a paragraph", "this is a link", etc.
-					</li>
+					<li>HTML elements tell the browser how to display the content</li>
+					<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
 				</ul>
 			</section>
 			<section class="main-section" id="HTML_Basic_Examples">
-                <header>HTML Basic Examples</header>
-                <!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each) -->
-                <p>In this chapter we will show some basic HTML examples.</p>
-                <p>Don't worry if we use tags you have not learned about yet.</p>
-                <h4>HTML Documents</h4>
-                <!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not each) -->
-                <p>All HTML documents must start with a document type declaration: <code>!DOCTYPE html</code>.</p>
-                <p>The HTML document itself begins with <code>html</code> and ends with <code>/html</code>.</p>
-                <p>The visible part of the HTML document is between <code><body></code> and <code>/body</code>.</p>
-                <h4>HTML Heading</h4>
-                <p>HTML headings are defined with the <code>h1</code> to <code>h6</code> tags.</p>
-                <p><code>h1</code> defines the most important heading. <code>h6</code> defines the least important heading.</p>
-                <h4>HTML Paragraphs</h4>
-                <p>HTML paragraphs are defined with the <code>p</code> tag.</p>
-                <h4>HTML Links</h4>
-                <p>HTML links are defined with the <code>a</code> tag.</p>
-                <p>The link's destination is specified in the <code>href</code> attribute. </p>
-                <p>Attributes are used to provide additional information about HTML elements.</p>
-                <h4>HTML Images</h4>
-                <p>HTML images are defined with the <code>img</code> tag.</p>
-                <p>The source file (<code>src</code>), alternative text (<code>alt</code>), <code>width</code>, and <code>height</code> are provided as attributes</p>
-                <p>Example: <code>src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"</code></p>
-            </section>
+				<header>HTML Basic Examples</header>
+				<!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each) -->
+				<p>In this chapter we will show some basic HTML examples.</p>
+				<p>Don't worry if we use tags you have not learned about yet.</p>
+				<h4>HTML Documents</h4>
+				<!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not each) -->
+				<p>All HTML documents must start with a document type declaration: <code>!DOCTYPE html</code>.</p>
+				<p>The HTML document itself begins with <code>html</code> and ends with <code>/html</code>.</p>
+				<p>
+					The visible part of the HTML document is between
+					<code>body</code> and <code>/body</code>.
+				</p>
+				<h4>HTML Heading</h4>
+				<p>HTML headings are defined with the <code>h1</code> to <code>h6</code> tags.</p>
+				<p><code>h1</code> defines the most important heading. <code>h6</code> defines the least important heading.</p>
+				<h4>HTML Paragraphs</h4>
+				<p>HTML paragraphs are defined with the <code>p</code> tag.</p>
+				<h4>HTML Links</h4>
+				<p>HTML links are defined with the <code>a</code> tag.</p>
+				<p>
+					The link's destination is specified in the
+					<code>href</code> attribute.
+				</p>
+				<p>Attributes are used to provide additional information about HTML elements.</p>
+				<h4>HTML Images</h4>
+				<p>HTML images are defined with the <code>img</code> tag.</p>
+				<p>
+					The source file (<code>src</code>), alternative text (<code>alt</code>), <code>width</code>, and <code>height</code> are provided
+					as attributes
+				</p>
+				<p>
+					Example:
+					<code>src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"</code>
+				</p>
+			</section>
 			<section class="main-section" id="HTML_Attributes">
-                <header>HTML Attributes</header>
-                <ul>
-                    <li>All HTML elements can have <b>attributes</b></li>
-                    <li>Attributes provide <b>additional information</b> about elements</li>
-                    <li>Attributes are always specified in <b>te start tag</b></li>
-                    <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
-                </ul>
-                <h4>href</h4>
-                <p>the <code>a</code> tag defines a hyperlink. The <code>href</code> attribute specifies te URL of the page the link goes to.</p>
-                <p>Example: <code>href="https://www.w3schools.com">Visit W3Schools</code></p>
-                <h4>src</h4>
-                <p>The <code>img</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed.</p>
-                <p>Example: <code>src="img_girl.jpg"</code></p>
-                <p>There are two ways to specify the URL in the <code>src</code> attribute:</p>
-                <ol>
-                    <li><b>Absolute URL</b> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</li>
-                    <p><b>Notes:</b> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
-                    <li><b>Relative URL</b> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</li>
-                    <p><b>Tip:</b> It is almost always best to use relative URLs. They will not break if you change domain.</p>
-                </ol>
-                <h4>The width and height Attributes</h4>
-                <p>The <code>img</code> tag should also contain the <code>width</code> and <code>height</code> attributes, which specifies the width and height of the image (in pixels).</p>
-                <p>Example: <code>src="img_girl.jpg" width="500" height="600"</code></p>
-                <h4>The alt Attribute</h4>
-                <p>The required <code>alt</code> attribute for the <code>img</code> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the <code>src</code> attribute, or if the user uses a screen reader.</p>
-                <p>Example: <code>src="img_girl.jpg" alt="Girl with a jacket"</code></p>
-                <h4>The style Attribute</h4>
-                <p>The <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
-                <p>Example: <code>style="color:red;"</code></p>
-                <h4>The lang Attribute</h4>
-                <p>You should always include the <code>lang</code> attribute inside the <code>html</code> tag,to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
-                <p>The following example specifies English as the language: <code>lang="en"</code></p>
-                <p>Country codes can also be added to the language code in the <code>lang</code> attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</p>
-                <p>The following example specifies English as the language and United States as the country: <code>lang="en-US"</code></p>
-            </section>
+				<header>HTML Attributes</header>
+				<ul>
+					<li>All HTML elements can have <b>attributes</b></li>
+					<li>Attributes provide <b>additional information</b> about elements</li>
+					<li>Attributes are always specified in <b>te start tag</b></li>
+					<li>
+						Attributes usually come in name/value pairs like:
+						<b>name="value"</b>
+					</li>
+				</ul>
+				<h4>href</h4>
+				<p>the <code>a</code> tag defines a hyperlink. The <code>href</code> attribute specifies te URL of the page the link goes to.</p>
+				<p>
+					Example:
+					<code>href="https://www.w3schools.com">Visit W3Schools</code>
+				</p>
+				<h4>src</h4>
+				<p>
+					The <code>img</code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image
+					to be displayed.
+				</p>
+				<p>Example: <code>src="img_girl.jpg"</code></p>
+				<p>
+					There are two ways to specify the URL in the
+					<code>src</code> attribute:
+				</p>
+				<ol>
+					<li>
+						<b>Absolute URL</b> - Links to an external image that is hosted on another website. Example:
+						src="https://www.w3schools.com/images/img_girl.jpg".
+					</li>
+					<p>
+						<b>Notes:</b> External images might be under copyright. If you do not get permission to use it, you may be in violation of
+						copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+					</p>
+					<li>
+						<b>Relative URL</b> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If
+						the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a
+						slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+					</li>
+					<p><b>Tip:</b> It is almost always best to use relative URLs. They will not break if you change domain.</p>
+				</ol>
+				<h4>The width and height Attributes</h4>
+				<p>
+					The <code>img</code> tag should also contain the <code>width</code> and <code>height</code> attributes, which specifies the width
+					and height of the image (in pixels).
+				</p>
+				<p>
+					Example:
+					<code>src="img_girl.jpg" width="500" height="600"</code>
+				</p>
+				<h4>The alt Attribute</h4>
+				<p>
+					The required <code>alt</code> attribute for the <code>img</code> tag specifies an alternate text for an image, if the image for
+					some reason cannot be displayed. This can be due to slow connection, or an error in the <code>src</code> attribute, or if the user
+					uses a screen reader.
+				</p>
+				<p>
+					Example:
+					<code>src="img_girl.jpg" alt="Girl with a jacket"</code>
+				</p>
+				<h4>The style Attribute</h4>
+				<p>The <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+				<p>Example: <code>style="color:red;"</code></p>
+				<h4>The lang Attribute</h4>
+				<p>
+					You should always include the <code>lang</code> attribute inside the <code>html</code> tag,to declare the language of the Web
+					page. This is meant to assist search engines and browsers.
+				</p>
+				<p>
+					The following example specifies English as the language:
+					<code>lang="en"</code>
+				</p>
+				<p>
+					Country codes can also be added to the language code in the
+					<code>lang</code> attribute. So, the first two characters define the language of the HTML page, and the last two characters define
+					the country.
+				</p>
+				<p>The following example specifies English as the language and United States as the country: <code>lang="en-US"</code></p>
+			</section>
 			<section class="main-section" id="HTML_Text_Formatting">
-                <header>HTML Text Formatting</header>
-                <p>HTML contains several elements for defining text with a special meaning.</p>
-                <h4>HTML Formatting Elements</h4>
-                <p>Formatting elements were designed to display special types of text:</p>
-                <ul>
-                    <li><code>b</code> - Bold text</li>
-                    <li><code>strong</code> - Important text</li>
-                    <li><code>i</code> - Italic text</li>
-                    <li><code>em</code> - Emphasized text</li>
-                    <li><code>mark</code> - Marked text</li>
-                    <li><code>small</code> - Smaller text</li>
-                    <li><code>del</code> - Deleted text</li>
-                    <li><code>ins</code> - Inserted text</li>
-                    <li><code>sub</code> - Subscript text</li>
-                    <li><code>sup</code> - Superscript text</li>
-                </ul>
-                <h4>HTML <code>b</code> and <code>strong</code> Elements</h4>
-                <p>The HTML <code>b</code> element defines bold text, without any extra importance.</p>
-                <p>Example: <b>This text is bold</b></p>
-                <p>The HTML <code>strong</code> element defines text with strong importance. The content inside is typically displayed in bold.</p>
-                <p>Example: <strong>This text is important!</strong></p>
-                <h4>HTML <code>i</code> and <code>em</code> Elements</h4>
-                <p>The HTML <code>i</code> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
-                <p><b>Tip:</b> The <code>i</code> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p>
-                <p>Example: <i>This text is italic</i></p>
-                <p>The HTML <code>em</code> element defines emphasized text. The content inside is typically displayed in italic.</p>
-                <p><b>Tip:</b> A screen reader will pronounce the words in <code>em</code> with an emphasis, using verbal stress.</p>
-                <p>Example: <em>This text is emphasized</em></p>
-                <h4>HTML <code>small</code> Element</h4>
-                <p>The HTML <code>small</code> element defines smaller text.</p>
-                <p>Example: <small>This is some smaller text.</small></p>
-                <h4>HTML <code>mark</code> Element</h4>
-                <p>The HTML <code>mark</code> element defines text that should be marked or highlighted.</p>
-                <p>Example: Do not forget to buy <mark>milk</mark> today.</p>
-                <h4>HTML <code>del</code> Element</h4>
-                <p>The HTML <code>del</code> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p>
-                <p>Example: My favorite color is <del>blue</del> red.</p>
-                <h4>HTML <code>ins</code> Element</h4>
-                <p>The HTML <code>ins</code>element defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p>
-                <p>Example: My favorite color is <del>blue</del> <ins>red</ins>.</p>
-                <h4>HTML <code>sub</code> Elements</h4>
-                <p>The HTML <code>sub</code> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H<sub>2</sub>O.</p>
-                <p>Example: This is <sub>subscripted</sub> text.</p>
-                <h4>HTML <code>sup</code> Element</h4>
-                <p>The HTML <code>sup</code> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>[1]</sup>.</p>
-                <p>Example: This is <sup>superscripted</sup> text.</p>
-            </section>
+				<header>HTML Text Formatting</header>
+				<p>HTML contains several elements for defining text with a special meaning.</p>
+				<h4>HTML Formatting Elements</h4>
+				<p>Formatting elements were designed to display special types of text:</p>
+				<ul>
+					<li><code>b</code> - Bold text</li>
+					<li><code>strong</code> - Important text</li>
+					<li><code>i</code> - Italic text</li>
+					<li><code>em</code> - Emphasized text</li>
+					<li><code>mark</code> - Marked text</li>
+					<li><code>small</code> - Smaller text</li>
+					<li><code>del</code> - Deleted text</li>
+					<li><code>ins</code> - Inserted text</li>
+					<li><code>sub</code> - Subscript text</li>
+					<li><code>sup</code> - Superscript text</li>
+				</ul>
+				<h4>HTML <code>b</code> and <code>strong</code> Elements</h4>
+				<p>The HTML <code>b</code> element defines bold text, without any extra importance.</p>
+				<p>Example: <b>This text is bold</b></p>
+				<p>The HTML <code>strong</code> element defines text with strong importance. The content inside is typically displayed in bold.</p>
+				<p>Example: <strong>This text is important!</strong></p>
+				<h4>HTML <code>i</code> and <code>em</code> Elements</h4>
+				<p>
+					The HTML <code>i</code> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in
+					italic.
+				</p>
+				<p>
+					<b>Tip:</b> The <code>i</code> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship
+					name, etc.
+				</p>
+				<p>Example: <i>This text is italic</i></p>
+				<p>The HTML <code>em</code> element defines emphasized text. The content inside is typically displayed in italic.</p>
+				<p><b>Tip:</b> A screen reader will pronounce the words in <code>em</code> with an emphasis, using verbal stress.</p>
+				<p>Example: <em>This text is emphasized</em></p>
+				<h4>HTML <code>small</code> Element</h4>
+				<p>The HTML <code>small</code> element defines smaller text.</p>
+				<p>Example: <small>This is some smaller text.</small></p>
+				<h4>HTML <code>mark</code> Element</h4>
+				<p>The HTML <code>mark</code> element defines text that should be marked or highlighted.</p>
+				<p>Example: Do not forget to buy <mark>milk</mark> today.</p>
+				<h4>HTML <code>del</code> Element</h4>
+				<p>
+					The HTML <code>del</code> element defines text that has been deleted from a document. Browsers will usually strike a line through
+					deleted text.
+				</p>
+				<p>Example: My favorite color is <del>blue</del> red.</p>
+				<h4>HTML <code>ins</code> Element</h4>
+				<p>
+					The HTML <code>ins</code>element defines a text that has been inserted into a document. Browsers will usually underline inserted
+					text.
+				</p>
+				<p>Example: My favorite color is <del>blue</del> <ins>red</ins>.</p>
+				<h4>HTML <code>sub</code> Elements</h4>
+				<p>
+					The HTML <code>sub</code> element defines subscript text. Subscript text appears half a character below the normal line, and is
+					sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H<sub>2</sub>O.
+				</p>
+				<p>Example: This is <sub>subscripted</sub> text.</p>
+				<h4>HTML <code>sup</code> Element</h4>
+				<p>
+					The HTML <code>sup</code> element defines superscript text. Superscript text appears half a character above the normal line, and
+					is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>[1]</sup>.
+				</p>
+				<p>Example: This is <sup>superscripted</sup> text.</p>
+			</section>
 			<section class="main-section" id="HTML_Quotation_and_Citation_Elements">
-                <header>HTML Quotation and Citation Elements</header>
-                <p>In this chapter we will go through the <code>blockquote</code>, <code>q</code>, <code>abbr</code>, <code>address</code>,<code>cite</code>, and <code>bdo</code> HTML elements.</p>
-                <h4>HTML <code>blockquote</code> for Quotations</h4>
-                <p>The HTML <code>blockquote</code> element defines a section that is quoted from another source.</p>
-                <p>Browsers usually ident <code>blockquote</code> elements.</p>
-                <p>Example: Here is a quote from WWF's website:</p>
-                <blockquote cite="http://www.worldwildlife.org/who/index.html">
-                    For 50 years, WWF has been protecting the future of nature.
-                    The world's leading conservation organization,
-                    WWF works in 100 countries and is supported by
-                    1.2 million members in the United States and
-                    close to 5 million globally.
-                </blockquote> 
-                <h4>HTML <code>q</code> for Short Quotations</h4>
-                <p>The HTML <code>q</code> tag defines a short quotation.</p>
-                <p>Browsers normally insert quotation marks around the quotation.</p>
-                <p>Example: WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-                <h4>HTML <code>abbr</code> for Abbreviations</h4>
-                <p>The HTML <code></code> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
-                <p>Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
-                <p><b>Tip:</b> Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.</p>
-                <p>Example: The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p> 
-                <h4>HTML <code>address</code> for Contact Information</h4>
-                <p>The HTML <code>address</code> tag defines the contact information for the author/owner of a document or an article.</p>
-                <p>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</p>
-                <p>The text in the <code>address</code> element usually renders in italic, and browsers will always add a line break before and after the <code>address</code> element.</p>
-                <p>Example:</p>
-                <address>
-                    Written by John Doe.<br>
-                    Visit us at:<br>
-                    Example.com<br>
-                    Box 564, Disneyland<br>
-                    USA
-                </address> 
-                <h4>HTML <code>cite</code> for Work Title</h4>
-                <p>The HTML <code>cite</code> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
-                <p><b>Note:</b> A person's name is not the title of a work.</p>
-                <p>he text in the <code>cite</code> element usually renders in <i>italic</i>.</p>
-                <p>Example: <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-                <h4>HTML <code>bdo</code> for Bi-Directional Override</h4>
-                <p>BDO stands for Bi-Directional Override.</p>
-                <p>The HTML <code>bdo</code> tag is used to override the current text direction.</p>
-                <p>Example: <bdo dir="rtl">This text will be written from right to left</bdo></p>
-            </section>
+				<header>HTML Quotation and Citation Elements</header>
+				<p>
+					In this chapter we will go through the
+					<code>blockquote</code>, <code>q</code>, <code>abbr</code>, <code>address</code>,<code>cite</code>, and <code>bdo</code> HTML
+					elements.
+				</p>
+				<h4>HTML <code>blockquote</code> for Quotations</h4>
+				<p>The HTML <code>blockquote</code> element defines a section that is quoted from another source.</p>
+				<p>Browsers usually ident <code>blockquote</code> elements.</p>
+				<p>Example: Here is a quote from WWF's website:</p>
+				<blockquote cite="http://www.worldwildlife.org/who/index.html">
+					For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100
+					countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+				</blockquote>
+				<h4>HTML <code>q</code> for Short Quotations</h4>
+				<p>The HTML <code>q</code> tag defines a short quotation.</p>
+				<p>Browsers normally insert quotation marks around the quotation.</p>
+				<p>
+					Example: WWF's goal is to:
+					<q>Build a future where people live in harmony with nature.</q>
+				</p>
+				<h4>HTML <code>abbr</code> for Abbreviations</h4>
+				<p>The HTML <code>abbr</code> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+				<p>Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+				<p>
+					<b>Tip:</b> Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+				</p>
+				<p>
+					Example: The
+					<abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+				</p>
+				<h4>HTML <code>address</code> for Contact Information</h4>
+				<p>The HTML <code>address</code> tag defines the contact information for the author/owner of a document or an article.</p>
+				<p>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</p>
+				<p>
+					The text in the <code>address</code> element usually renders in italic, and browsers will always add a line break before and after
+					the <code>address</code> element.
+				</p>
+				<p>Example:</p>
+				<address>
+					Written by John Doe.<br />
+					Visit us at:<br />
+					Example.com<br />
+					Box 564, Disneyland<br />
+					USA
+				</address>
+				<h4>HTML <code>cite</code> for Work Title</h4>
+				<p>
+					The HTML <code>cite</code> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a
+					sculpture, etc.).
+				</p>
+				<p><b>Note:</b> A person's name is not the title of a work.</p>
+				<p>he text in the <code>cite</code> element usually renders in <i>italic</i>.</p>
+				<p>Example: <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+				<h4>HTML <code>bdo</code> for Bi-Directional Override</h4>
+				<p>BDO stands for Bi-Directional Override.</p>
+				<p>The HTML <code>bdo</code> tag is used to override the current text direction.</p>
+				<p>
+					Example:
+					<bdo dir="rtl">This text will be written from right to left</bdo>
+				</p>
+			</section>
 		</main>
 	</body>
 </html>
